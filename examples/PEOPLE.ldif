@@ -1,0 +1,20 @@
+# Defines the Organizational Unit 'people'
+
+dn: ou=people,dc=example,dc=com
+# The line above defines what object the following operation is performed on
+changetype: add
+# The line above tells LDAP to add the attribute defined below
+objectClass: organizationalUnit
+ou: people
+# The attribute 'ou' is added with a value of 'people', but in order to do 
+# that LDAP needs the definition of 'ou', which is referenced by the 
+# objectClass: organizationalUnit line
+#--
+# The divider above is needs to be uncommented before any other operations
+# on this object
+#changetype: ...
+#objectClass: ...
+#...: ...
+
+#dn: ...
+# Leave a blank link to start working on a new object

@@ -1,0 +1,25 @@
+# Example LDIF to load some data about a fictional biology department.
+# All passwords are 'password'
+#
+# Requires: 
+#   ou=people,dc=example,dc=com to exist
+#   inetOrgPerson object class
+#   eduPerson object class (>= 201310, although older versions may work)
+
+dn: ou=biology,dc=example,dc=com
+changetype: add
+objectclass: organizationalunit
+ou: biology
+
+dn: uid=cas,ou=People,dc=example,dc=com
+changetype: add
+objectClass: inetOrgPerson
+objectClass: eduperson
+userpassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+cn: Castiel Novack
+uid: cas
+sn: Novack
+eduPersonOrgUnitDN: ou=biology,dc=example,dc=com
+eduPersonOrgUnitDN: ou=people,dc=example,dc=com
+eduPersonPrimaryOrgUnitDN: ou=biology,dc=example,dc=com
+

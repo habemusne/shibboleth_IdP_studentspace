@@ -1,0 +1,2 @@
+<Context docBase="/home/ubuntu/server/shibidp/war/idp.war" privileged="true"
+antiResourceLocking="false" antiJARLocking="false" unpackWAR="false" swallowOutput="true" />

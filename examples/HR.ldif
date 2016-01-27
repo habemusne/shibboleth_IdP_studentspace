@@ -1,0 +1,37 @@
+# Example LDIF to load some data about a fictional hr department.
+# All passwords are 'password'
+#
+# Requires: 
+#   ou=people,dc=example,dc=com to exist
+#   inetOrgPerson object class
+#   eduPerson object class (>= 201310, although older versions may work)
+
+dn: ou=hr,dc=example,dc=com
+changetype: add
+objectclass: organizationalunit
+ou: hr
+
+dn: uid=dean,ou=people,dc=example,dc=com
+changetype: add
+objectClass: inetOrgPerson
+objectClass: eduperson
+userpassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+cn: Dean Winchester
+uid: dean
+sn: Winchester
+eduPersonOrgUnitDN: ou=hr,dc=example,dc=com
+eduPersonOrgUnitDN: ou=people,dc=example,dc=com
+eduPersonPrimaryOrgUnitDN: ou=person,dc=example,dc=com
+
+dn: uid=bobby,ou=people,dc=example,dc=com
+changetype: add
+objectClass: inetOrgPerson
+objectClass: eduperson
+userpassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+cn: Bobby Singer
+uid: bobby
+sn: Signer
+eduPersonOrgUnitDN: ou=hr,dc=example,dc=com
+eduPersonOrgUnitDN: ou=people,dc=example,dc=com
+eduPersonPrimaryOrgUnitDN: ou=hr,dc=example,dc=com
+

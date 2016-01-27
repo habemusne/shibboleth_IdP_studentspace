@@ -1,0 +1,98 @@
+Jan 27, 2016 5:42:33 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-443"]
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jan 27, 2016 5:42:33 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jan 27, 2016 5:42:33 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/idp] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-443"]
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-443"]
+Jan 27, 2016 5:42:33 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.59
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jan 28 2015 15:51:10 UTC
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.59.0
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.13.0-74-generic
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.7.0_91-b02
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/ubuntu/server/tomcat
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/ubuntu/server/tomcat
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/ubuntu/server/tomcat/conf/logging.properties
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/home/ubuntu/server/tomcat/endorsed
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/ubuntu/server/tomcat
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/ubuntu/server/tomcat
+Jan 27, 2016 5:42:37 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/ubuntu/server/tomcat/temp
+Jan 27, 2016 5:42:37 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Jan 27, 2016 5:42:37 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-443"]
+Jan 27, 2016 5:42:38 AM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Jan 27, 2016 5:42:38 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jan 27, 2016 5:42:38 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1283 ms
+Jan 27, 2016 5:42:38 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jan 27, 2016 5:42:38 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+Jan 27, 2016 5:42:38 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /home/ubuntu/server/tomcat/conf/Catalina/localhost/idp.xml
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor /home/ubuntu/server/tomcat/conf/Catalina/localhost/idp.xml has finished in 13,546 ms
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/ubuntu/server/tomcat/webapps/ROOT
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/ubuntu/server/tomcat/webapps/ROOT has finished in 102 ms
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/ubuntu/server/tomcat/webapps/host-manager
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/ubuntu/server/tomcat/webapps/host-manager has finished in 133 ms
+Jan 27, 2016 5:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/ubuntu/server/tomcat/webapps/docs
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/ubuntu/server/tomcat/webapps/docs has finished in 101 ms
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/ubuntu/server/tomcat/webapps/manager
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/ubuntu/server/tomcat/webapps/manager has finished in 115 ms
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/ubuntu/server/tomcat/webapps/examples
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/ubuntu/server/tomcat/webapps/examples has finished in 519 ms
+Jan 27, 2016 5:42:52 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-443"]
+Jan 27, 2016 5:42:52 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jan 27, 2016 5:42:52 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 14629 ms
+Jan 27, 2016 5:43:35 AM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
